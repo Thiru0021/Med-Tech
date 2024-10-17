@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Recommendation Result</title>
+    <link rel="stylesheet" href="static/result.css">
+<body>
+    <div class="container">
+        <h1>Medicine Recommendation</h1>
+        
+        <!-- Age and Gender Info -->
+        <div class="result-info">
+            <p><span>Age:</span> {{ age }}</p>
+            <p><span>Gender:</span> {{ gender }}</p>
+        </div>
+
+        <!-- Symptoms Info -->
+        <div class="result-info">
+            <p><span>Symptoms:</span> {{ symptoms }}</p>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations">
+            <h2>Recommended Medicines</h2>
+            <ul>
+                {% for recommendation in recommendations %}
+                    <li>{{ recommendation }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Fever and Temperature Info -->
+        {% if fever_temp %}
+            <div class="temperature-info">
+                <p>Your fever temperature is {{ fever_temp }}°C. If it persists, consult a doctor.</p>
+            </div>
+        {% endif %}
+
+        <!-- Warning for Age Restriction -->
+        {% if age < 16 %}
+            <p class="warning">Sorry, this service is only available for users 16 years and older.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
