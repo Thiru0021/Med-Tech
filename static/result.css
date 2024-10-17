@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.warning {
+    color: #d9534f;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.recommendations {
+    margin-top: 20px;
+}
+
+.recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recommendations ul li {
+    font-size: 18px;
+    color: #1d0ac2;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.result-info {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.result-info span {
+    font-weight: bold;
+    color: #333;
+}
+
+.temperature-info {
+    background-color: #d9edf7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #31708f;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .recommendations ul li {
+        font-size: 16px;
+    }
+}
